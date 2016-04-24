@@ -4,6 +4,9 @@ Android App that recommends popular movies! It makes use of the API at www.MyApi
 #Some Background
 This was originally supposed to be a much less complex culminating project for an Android App Development course at Seneca College. However, because the assignment was very open ended and I had a lot of free time to work on it, I got a bit of a creative spark and began implementing several additional features that I felt would make the application more complete or useful. By the time I finished it, I felt as though it was much more than a School Project - it was a personal project. And because of that I put a lot of my own free time and effort into fixing various bugs or getting small details just right, not because it would affect my grades but because I cared on a personal level about making the app as good as I could. And this is the end result of that process.
 
+#A Notice about building in Android Studio on Windows
+If you download this repository as a ZIP, it is possible that some directory names within the project end up being too long after the extraction process (more than 240 characters), which causes the build to fail. To bypass this issue, simply cut and paste the "MovieRecommendationApp" folder to your Desktop, or C drive, or anywhere with a short and simple directory, and open it with Android Studio from there. Afterwards, the project should compile and run flawlessly.
+
 #License
 Copyright © 2016, Frank Botos, All Rights Reserved.
 Please do not use this app for commercial purposes. However, feel free to use it for educational purposes, to share and redsistribute both the code(unaltered) and the .apk itself(unaltered), and to use the app if its functionality is something that you are interested in.
