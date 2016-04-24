@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MovieRecommendActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genres_interested"
+        android:id="@+id/genresInterested"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action"
+        android:layout_gravity="start"
+        android:layout_below="@+id/genresInterested"
+        android:layout_marginTop="15dp"/>
+
+    <CheckBox
+        android:id="@+id/adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adventure"
+        android:layout_gravity="start"
+        android:layout_below="@+id/action"/>
+
+    <CheckBox
+        android:id="@+id/fantasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fantasy"
+        android:layout_gravity="start"
+        android:layout_below="@+id/adventure"/>
+
+    <CheckBox
+        android:id="@+id/scifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scifi"
+        android:layout_alignTop="@+id/romance"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/animation"
+        android:layout_below="@+id/scifi"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/comedy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comedy"
+        android:layout_alignTop="@+id/mystery"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/romance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/romance"
+        android:layout_below="@+id/genresInterested"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <CheckBox
+        android:id="@+id/horror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horror"
+        android:layout_below="@+id/romance"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"/>
+
+    <CheckBox
+        android:id="@+id/mystery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mystery"
+        android:layout_below="@+id/horror"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <CheckBox
+        android:id="@+id/drama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drama"
+        android:layout_gravity="start"
+        android:layout_below="@+id/fantasy"/>
+
+    <CheckBox
+        android:id="@+id/thriller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thriller"
+        android:layout_alignTop="@+id/history"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:layout_below="@+id/mystery"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"/>
+
+    <ImageButton
+        android:id="@+id/selectAll"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_select_all_black_24dp"
+        android:contentDescription="@string/select_all"
+        android:layout_below="@+id/thriller"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/clearAll"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_black_24dp"
+        android:contentDescription="@string/clear_all"
+        android:layout_below="@+id/thriller"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_black_24dp"
+        android:contentDescription="@string/search_button"
+        android:layout_below="@+id/thriller"
+        android:layout_alignRight="@+id/romance"
+        android:layout_alignEnd="@+id/romance"
+        android:layout_toRightOf="@+id/clearAll"
+        android:layout_toEndOf="@+id/clearAll" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieScroll"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/selectAll" />
+
+    <RelativeLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/selectAll">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_popular_movies"
+            android:layout_above="@+id/loadingProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_recommendations"
+        android:id="@+id/movieRecommendations"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/placeHolder2"
+
+        android:drawableBottom="@drawable/ic_local_movies_black_48dp"
+        android:drawableTint="@color/colorAccent"
+
+        android:background="@color/opaqueGray"
+
+        android:layout_toLeftOf="@+id/placeHolder1"
+        android:layout_toStartOf="@+id/placeHolder1"
+
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+
+        android:textColor="@android:color/primary_text_dark" />
+
+    <!--using empty layout for formatting purposes-->
+
+    <RelativeLayout
+        android:id="@+id/placeHolder1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_movie"
+        android:id="@+id/searchForMovie"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/placeHolder1"
+        android:layout_alignStart="@+id/placeHolder1"
+        android:layout_alignBottom="@+id/placeHolder2"
+
+        android:drawableBottom="@drawable/ic_search_black_48dp"
+        android:drawableTint="@color/colorAccent"
+
+        android:background="@color/opaqueGray"
+
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+
+        android:textColor="@android:color/primary_text_dark"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies_seen"
+        android:id="@+id/moviesIveSeen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:drawableBottom="@drawable/ic_movie_filter_black_48dp"
+        android:drawableTint="@color/colorAccent"
+
+        android:background="@color/opaqueGray"
+
+        android:layout_below="@+id/movieRecommendations"
+        android:layout_toLeftOf="@+id/help"
+        android:layout_toStartOf="@+id/help"
+
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+
+        android:textColor="@android:color/primary_text_dark"/>
+
+    <!--using empty layout for formatting purposes-->
+    <RelativeLayout
+        android:id="@+id/placeHolder2"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        android:id="@+id/help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/placeHolder1"
+        android:layout_alignStart="@+id/placeHolder1"
+
+        android:drawableBottom="@drawable/ic_help_outline_black_48dp"
+        android:drawableTint="@color/colorAccent"
+
+        android:background="@color/opaqueGray"
+
+        android:layout_below="@+id/movieRecommendations"
+
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+
+        android:textColor="@android:color/primary_text_dark"/>
+
+</RelativeLayout>

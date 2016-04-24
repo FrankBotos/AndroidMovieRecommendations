@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Movie Recommendations</string>
+    <string name="genres_interested">Please select your desired genres: </string>
+
+    <string name="search_button">Search for movies</string>
+    <string name="select_all">Search for movies</string>
+    <string name="clear_all">Search for movies</string>
+
+    <string name="action">Action</string>
+    <string name="adventure">Adventure</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="drama">Drama</string>
+    <string name="scifi">Sci-Fi&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="animation">Animation</string>
+    <string name="comedy">Comedy&#160;&#160;&#160;</string>
+    <string name="thriller">Thriller&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="romance">Romance</string>
+    <string name="horror">Horror</string>
+    <string name="mystery">Mystery</string>
+    <string name="history">History</string>
+
+    <string name="no_genre">Please select at least one genre!</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="no_matches">Whoops! No matches found. Try selecting more genres!</string>
+
+    <string name="movie_not_released">NOT YET RELEASED</string>
+
+    <string name="movie_recommendations">Movie Recommendations</string>
+    <string name="search_movie">Search For A Movie</string>
+    <string name="movies_seen">My Movies</string>
+    <string name="help">Help/About</string>
+
+    <string name="my_movies">My Movies:</string>
+    <string name="no_movies">It appears you have no movies! Try saving some!</string>
+    <string name="search_empty">The search field appears to be empty!</string>
+    <string name="movie_not_rated">NA</string>
+
+    <string name="sort_meta">Sort By Metarating</string>
+    <string name="sort_watched_status">Sort By Watched Status</string>
+    <string name="sort_your_rating">Sort By Your Ratings</string>
+    <string name="sort_title">Sort By Title</string>
+
+    <string name="updating_data">Updating your list&#8230;</string>
+    <string name="loading_popular_movies">Loading popular movies&#8230;</string>
+    <string name="what_is_this">What is this?</string>
+    <string name="app_description">This application lets you browse popular movies and filter them by genre! You can also search for specific movies! If during your searches you see anything interesting, you can mark it as seen, or want to see, and it will be added to your list! Anything that you have marked as seen can also be rated. Before long, you\'ll have your movie list in your pocket, with your own ratings, critic ratings, and a brief description of the movie.</string>
+    <string name="how_do_i_use_it">How Do I Use it?</string>
+    <string name="movie_marked_want_to_see">This means that a movie marked as \'want to see.\' Simply click the body of a movie once and it will be added to your list, and marked as \'want to see.\'</string>
+    <string name="movie_marked_seen">This means that you\'ve seen a movie. Click the body of a movie a second time to mark it as \'has seen.\' When a movie is marked as \'has seen,\' you can rate it out of 5.</string>
+    <string name="api_credit">Powered By: MyApiFilms.com</string>
+    <string name="how_to_delete">-Long click an item to delete it from your list!</string>
+    <string name="personal_rating_explanation">These stars serve as an indication of your personal rating for any movies you\'ve seen!</string>
+    <string name="loading_search">Searching&#8230;</string>
+    <string name="click_title">-Click the title of any movie to be taken to a webpage with more information</string>
+    <string name="metarating_not_available">NA</string>
+
+</resources>

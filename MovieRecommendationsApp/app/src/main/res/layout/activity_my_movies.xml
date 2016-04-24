@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_movies"
+        android:id="@+id/myMovies"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:paddingTop="4dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_meta"
+        android:id="@+id/sortByMetaRating"
+        android:layout_below="@+id/myMovies"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="5sp"
+        android:drawableBottom="@drawable/ic_live_help_black_24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_watched_status"
+        android:id="@+id/sortBySeen"
+        android:textSize="5sp"
+        android:layout_alignTop="@+id/sortByMetaRating"
+        android:layout_toRightOf="@+id/sortByMetaRating"
+        android:layout_toEndOf="@+id/sortByMetaRating"
+        android:drawableBottom="@drawable/ic_check_circle_black_24dp"
+        android:drawableTint="@color/metaScore"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_your_rating"
+        android:textSize="5sp"
+        android:id="@+id/sortByRating"
+        android:layout_alignTop="@+id/sortBySeen"
+        android:layout_toRightOf="@+id/sortBySeen"
+        android:layout_toEndOf="@+id/sortBySeen"
+        android:drawableBottom="@drawable/ic_star_black_24dp"
+        android:drawableTint="@color/wantToSee"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_title"
+        android:textSize="5sp"
+        android:id="@+id/sortByTitle"
+        android:layout_above="@+id/myMoviesActivityScroll"
+        android:layout_toRightOf="@+id/sortByRating"
+        android:layout_toEndOf="@+id/sortByRating"
+        android:drawableBottom="@drawable/ic_sort_by_alpha_black_24dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myMoviesActivityScroll"
+        android:layout_below="@+id/sortByMetaRating"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/loadingUpdatesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sortByMetaRating">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updating_data"
+            android:layout_above="@+id/loadingUpdatesProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+        <ProgressBar
+            android:id="@+id/loadingUpdatesProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
