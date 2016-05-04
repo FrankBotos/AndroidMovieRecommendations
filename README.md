@@ -7,6 +7,5 @@ This was originally supposed to be a much less complex culminating project for a
 #A Notice about building in Android Studio on Windows
 If you download this repository as a ZIP, it is possible that some directory names within the project end up being too long after the extraction process (more than 240 characters), which causes the build to fail. To bypass this issue, simply cut and paste the "MovieRecommendationApp" folder to your Desktop, or C drive, or anywhere with a short and simple directory, and open it with Android Studio from there. Afterwards, the project should compile and run flawlessly.
 
-#License
 Copyright © 2016, Frank Botos, All Rights Reserved.
 Please do not use this app for commercial purposes. However, feel free to use it for educational purposes, to share and redsistribute both the code(unaltered) and the .apk itself(unaltered), and to use the app if its functionality is something that you are interested in.
